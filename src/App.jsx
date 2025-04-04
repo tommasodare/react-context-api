@@ -1,6 +1,8 @@
+import { PostsContext } from './context/PostsContext'
+
 export default function App() {
 
-  const posts = [
+  /* const posts = [
     {
       id: 1,
       title: "First Blog Post",
@@ -33,11 +35,13 @@ export default function App() {
       date: "2024-04-01",
       likes: 31
     }
-  ];
+  ]; */
 
   return (
 
-    <h1>Hello World</h1>
+    <PostsContext.Provider value={{ postsList: posts }}>
+      <PostsPage />
+    </PostsContext.Provider>
 
   )
 
