@@ -1,8 +1,11 @@
-import { PostsContext } from './context/PostsContext'
+import PostsContext from "./context/PostContext"
+import PostsPage from "./components/PostsPage"
+import { useContext } from "react";
+import PostList from "./components/PostList";
 
 export default function App() {
 
-  /* const posts = [
+  const posts = [
     {
       id: 1,
       title: "First Blog Post",
@@ -35,7 +38,7 @@ export default function App() {
       date: "2024-04-01",
       likes: 31
     }
-  ]; */
+  ];
 
   return (
 

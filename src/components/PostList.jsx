@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { PostsContext } from "../context/PostsContext";
+import PostsContext from "./components/context/PostsContext";
 
 export default function PostList() {
 
